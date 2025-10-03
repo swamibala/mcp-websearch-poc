@@ -1,0 +1,11 @@
+[project]
+name = "mcp-websearch-poc"
+version = "0.1.0"
+description = "This project serves as a Proof of Concept (PoC) for exposing Web Search capability as a Model Context Protocol (MCP) server."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.12.4",
+    "openai>=2.1.0",
+    "python-dotenv>=1.1.1",
+]
