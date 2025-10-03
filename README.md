@@ -90,3 +90,8 @@ Example invocation:
 ## ⚠️ **Limitations:**  
 - **Web Search tool is not supported** for OpenAI models.  
 - **Structured outputs are not compatible** with browser search (reason why structured output wasn’t implemented in this PoC).  
+
+## Test Run
+search_query = **"Parking nearby Marriott Hotel County Hall, London, UK"**
+
+![Test Run](test_run.png)
