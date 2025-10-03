@@ -35,7 +35,7 @@ async def run_mcp_client():
 
 
         # --- Manual Tool Call (Simulating LLM's decision) ---
-        search_query = "What is time now in london?"
+        search_query = "Parking nearby Marriott Hotel County Hall, London, UK"
         
         print(f"\n--- Simulating LLM Call Request: tools/call ---")
         print(f"Calling tool: {web_search_tool.name} with query: '{search_query}'")
