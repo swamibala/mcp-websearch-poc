@@ -45,7 +45,7 @@ async def perform_web_search(query: str) -> str:
             tool_choice="required",
             tools=[
                 {
-                    "type": "browser_search" # Using OpenAI Response API internal built-in tool
+                    "type": "browser_search" # Using groq's Response API internal built-in tool
                 }
             ]
         )
