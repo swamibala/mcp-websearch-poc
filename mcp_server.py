@@ -9,7 +9,7 @@ load_dotenv()
 # --- Configuration ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
-MODEL_NAME = "openai/gpt-oss-120b"
+MODEL_NAME = "openai/gpt-oss-20b"
 
 if not GROQ_API_KEY:
     raise ValueError("GROQ_API_KEY not found. Server cannot start.")
