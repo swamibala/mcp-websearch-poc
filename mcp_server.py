@@ -30,7 +30,7 @@ mcp = FastMCP("WebSearchToolServer")
 @mcp.tool
 async def perform_web_search(query: str) -> str:
     """
-    Performs a real-time web search for the given query using the OpenAI Response API built-in browser_search tool.
+    Performs a real-time web search for the given query using the groq's Response API with built-in browser_search tool.
 
     :param query: The search term or question to look up on the web.
     :return: A synthesized text summary of the search results.
@@ -51,11 +51,11 @@ async def perform_web_search(query: str) -> str:
         )
         
         output_text = response.output_text
-        print(f"Groq API Success. Result length: {len(output_text)} chars.")
+        print(f"groq API Success. Result length: {len(output_text)} chars.")
         return output_text
 
     except Exception as e:
-        error_msg = f"Groq API call failed during web search: {e}"
+        error_msg = f"groq API call failed during web search: {e}"
         print(error_msg)
         # MCP server should return an error or a descriptive string
         return f"Error executing web search: {e}"
