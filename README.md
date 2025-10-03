@@ -1,13 +1,16 @@
-# MCP Web Search POC (Groq/OpenAI Compatibility)
-
-This project serves as a Proof of Concept (PoC) for exposing a "Web Search" capability as a Model Context Protocol (MCP) server. It leverages the Groq API's compatibility with the OpenAI Response API to access an advanced, real-time browsing capability.
+# MCP Tool: Web Search with OpenAI Response API
+This project serves as a Proof of Concept for exposing a "Web Search" capability as a Model Context Protocol (MCP) server. 
+It leverages the groq API's compatibility with the OpenAI Response API to access an advanced, real-time browsing capability.
 
 ## 🌟 Key Features
 
 * **Model Integration:** Uses the **`openai/gpt-oss-120b`** model via the Groq API.
 * **MCP Implementation:** Exposes the search functionality as a standardized MCP server using the `fastmcp` Python library.
-* **Advanced Tooling:** Demonstrates the use of Groq's specialized **`browser_search`** tool for comprehensive web content retrieval.
-* **Structured Output:** The tool is configured to return a structured response, though the final output is synthesized text from the LLM.
+* **Advanced Tooling:** Demonstrates the use of OpenAI's specialized **`browser_search`** tool for comprehensive web content retrieval.
+
+* **Out Of Scope**
+* Structured Output: The tool can return a structured response, though the final output is synthesized text from the LLM. But, combining structured output + tool invocation is not currently supported (per qroq docs). So, this proof of concept does not have structured output
+* browser_search tool has been used instead of web_search
 
 ## 🔎 Tool Capability: Browser Search (PoC Note)
 
